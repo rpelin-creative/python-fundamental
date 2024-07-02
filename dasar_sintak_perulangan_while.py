@@ -2,27 +2,27 @@
 perulangan while
 """
 
-jumlah_buku = 10
-print(f"Jumlah buku {jumlah_buku}")
+book_count = 10
+print(f"Jumlah buku {book_count}")
 
-jumlah_buku_yg_sudah_dibaca = 0
-print(f"Jumlah buku yang sudah dibaca {jumlah_buku_yg_sudah_dibaca}")
+read_count = 0
+print(f"Jumlah buku yang sudah dibaca {read_count}")
 
-jumlah_buku_yg_sudah_dibaca_dan_dipahami = 0
-print(f"Jumlah buku yang sudah dibaca dan dipahami {jumlah_buku_yg_sudah_dibaca_dan_dipahami}")
+understood_count = 0
+print(f"Jumlah buku yang sudah dibaca dan dipahami {understood_count}")
 
 
-while jumlah_buku_yg_sudah_dibaca < jumlah_buku * 2:
-    jumlah_buku_yg_sudah_dibaca = jumlah_buku_yg_sudah_dibaca + 1
-    if jumlah_buku_yg_sudah_dibaca_dan_dipahami == 9:
-        print(f"Buku ke {jumlah_buku_yg_sudah_dibaca_dan_dipahami + 1} belum dipahami")
+while read_count < book_count * 2:
+    read_count = read_count + 1
+    if understood_count == 9:
+        print(f"Buku ke {understood_count + 1} belum dipahami")
     else:
-        jumlah_buku_yg_sudah_dibaca_dan_dipahami = jumlah_buku_yg_sudah_dibaca_dan_dipahami + 1
-        print(f"Baca buku ke {jumlah_buku_yg_sudah_dibaca_dan_dipahami}")
+        understood_count = understood_count + 1
+        print(f"Baca buku ke {understood_count}")
 
-print(f"Jumlah buku yang sudah dibaca {jumlah_buku_yg_sudah_dibaca_dan_dipahami}")
-if jumlah_buku_yg_sudah_dibaca_dan_dipahami == jumlah_buku:
+print(f"Jumlah buku yang sudah dibaca {understood_count}")
+if understood_count == book_count:
     print("Bu,Semua buku sudah dipahami")
 else:
     print(f"Bu, Tidak semua buku bisa dipahami,"
-          f" Budi hanya memahami {jumlah_buku_yg_sudah_dibaca_dan_dipahami} buku")
+          f" Budi hanya memahami {understood_count} buku")
