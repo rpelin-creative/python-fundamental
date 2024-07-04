@@ -25,3 +25,30 @@ print('\ndaftar_buku setelah di append')
 daftar_buku.append('Endog')
 for i in range(0,len(daftar_buku)):
     print(daftar_buku[i])
+
+
+print('\nAmbil data dan hapus isi list Pakai pop dari kiri')
+daftar_buku = ['Aku','Bandung','Cacing','Dodol']
+buku1 = daftar_buku.pop(0)
+buku2 = daftar_buku.pop(1)
+buku3 = daftar_buku.pop(1)
+for i in range(0,len(daftar_buku)):
+    print(daftar_buku[i])
+
+print('\nHasil pop dari kiri yg diambil')
+print(buku1)
+print(buku2)
+print(buku3)
+
+print('\nAmbil data dan hapus isi list Pakai pop dari kanan')
+daftar_buku = ['Aku','Bandung','Cacing','Dodol']
+buku1 = daftar_buku.pop(-1)
+buku2 = daftar_buku.pop(-3)
+buku3 = daftar_buku.pop(-1)
+for i in range(0,len(daftar_buku)):
+    print(daftar_buku[i])
+
+print('\nHasil pop dari kanan yg diambil')
+print(buku1)
+print(buku2)
+print(buku3)
