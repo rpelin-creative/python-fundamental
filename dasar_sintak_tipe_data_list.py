@@ -52,3 +52,10 @@ print('\nHasil pop dari kanan yg diambil')
 print(buku1)
 print(buku2)
 print(buku3)
+
+print('\nPerintah Del')
+daftar_buku = ['Seven habits','How to Influence People','First Things First','4DX']
+del daftar_buku[0]
+for i in range(0,len(daftar_buku)):
+    print(daftar_buku[i])
+
