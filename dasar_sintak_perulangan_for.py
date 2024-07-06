@@ -2,13 +2,13 @@
 Perulangan
 """
 
-jumlah_buku = 10
-print(f"jumlah buku {jumlah_buku}")
+book_count = 5
+print(f"number of books {book_count}")
 
-jumlah_buku_yg_sudah_dibaca = 0
-print(f"Jumlah buku yang sudah dibaca {jumlah_buku_yg_sudah_dibaca}")
+read_count = 0
+print(f"Number of books read {read_count}")
 
-for jumlah_buku_yg_sudah_dibaca in range(1, jumlah_buku+1):
-    print(f"Buku ke {jumlah_buku_yg_sudah_dibaca} sudah dibaca")
+for read_count in range(1, book_count + 1):
+    print(f"Book  {read_count} has been read")
 
-print(f"Jumlah buku yang sudah dibaca {jumlah_buku_yg_sudah_dibaca}")
+print(f"Number of books read {read_count}")
