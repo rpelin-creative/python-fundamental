@@ -58,14 +58,15 @@ daftar_buku_baru = daftar_buku[1::2]
 for i in range(0, len(daftar_buku_baru)):
     print (daftar_buku_baru[i])
 
-print('\nMembuat list baru dengan variable list baru ambil yang genap')
-daftar_buku = ['1 Seven habits','2 How to Influence People','3 First Things First','4 4DX','5 A','6 B']
-daftar_buku_baru = daftar_buku[1::2]
+
+print('\nMembuat list baru dengan variable list baru hapus dari belakang tiap beberapa langkah')
+daftar_buku = ['1 Seven habits','2 How to Influence People','3 First Things First','4 4DX','5 A','6 B','7 C','8 D','9 E']
+daftar_buku_baru = daftar_buku[0:-1:2]
 for i in range(0, len(daftar_buku_baru)):
     print (daftar_buku_baru[i])
 
-print('\nMembuat list baru dengan variable list baru hapus dari belakang tiap beberapa langkah')
-daftar_buku = ['Seven habits','How to Influence People','First Things First','4DX','A','B']
-daftar_buku_baru = daftar_buku[0:-1:2]
+print('\n???')
+daftar_buku = ['1 Seven habits','2 How to Influence People','3 First Things First','4 4DX','5 A','6 B','7 C','8 D','9 E']
+daftar_buku_baru = daftar_buku[1:7:2]
 for i in range(0, len(daftar_buku_baru)):
     print (daftar_buku_baru[i])
